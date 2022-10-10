@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- asset in public/ -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <!-- asset *not* in public/ -->
+    <link rel="before-link" href="https://where.is/this_link_in_output.png" />
+
+    <!-- Comment 1 -->
+    <link rel="missing-link" href="https://where.is/this_link_in_output.png" />
+    <!-- Comment 2 -->
+    <link rel="after-link" href="https://where.is/this_link_in_output.png" />
+
     <link rel="manifest" href="/manifest.json" />
     <title>Vite App</title>
   </head>
   <body>
-    <h1>Vite App</h1>
+    <h1>Vite Comment Wrapping bug</h1>
+    <ol>
+      <li>Build Project</li>
+    </ol>
   </body>
 </html>
